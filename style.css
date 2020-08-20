@@ -172,7 +172,6 @@ header .navigation-wrapper .desktop-nav ul li:last-child {
 
 /* About Section */
 .about-section-wrapper {
-	background-color: #fafafa;
 	padding: 78px 0;
 }
 
@@ -197,10 +196,7 @@ header .navigation-wrapper .desktop-nav ul li:last-child {
 .about-section-wrapper .about-section-contents .about-section-text p{
 font-size: 18px;
 line-height: 27px;
-/* or 150% */
-
 letter-spacing: 0.01em;
-
 color: #77869E;
 }
 @media screen and (max-width: 1200px) {
@@ -220,7 +216,12 @@ color: #77869E;
 @media screen and (max-width: 530px) {
 	.about-section-wrapper .about-section-contents {
 		padding: 0 1.5rem 0 1.5rem;
-	}
+  }
+  .custom-container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
 }
 .about-section-wrapper .about-section-contents .line{
   border-left: 1px solid #000;
@@ -242,19 +243,81 @@ color: #77869E;
 }
 
 /*Event Speakers Section*/
-.speak {
-  margin: 20px 0;
+.speaker-section-wrapper {
+	padding: 78px 0;
 }
+
+.speaker-section-wrapper .speaker-section-contents {
+	max-width: 1440px;
+	margin: auto;
+	padding: 0 6.875rem 0 6.4rem;
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: (1fr) /* [2] */;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 20px;
+}
+
+.speaker-section-wrapper .speaker-section-contents .speaker-section-text h1 {
+  font-size: 48px;
+  line-height: 59px;
+  letter-spacing: 0.02em;
+  color: #0D3E5E;
+}
+
+.speaker-section-wrapper .speaker-section-contents .speaker-section-text p{
+font-size: 18px;
+line-height: 27px;
+letter-spacing: 0.01em;
+color: #77869E;
+}
+@media screen and (max-width: 1200px) {
+	.speaker-section-wrapper .speaker-section-contents {
+		padding: 0 3rem 0 3rem;
+	}
+}
+
+@media screen and (max-width: 1075px) {
+	.speaker-section-wrapper .speaker-section-contents {
+		-ms-grid-columns: 100%;
+		grid-template-columns: 100%;
+		grid-row-gap: 20px;
+	}
+}
+
+@media screen and (max-width: 530px) {
+	.speaker-section-wrapper .speaker-section-contents {
+		padding: 0 1.5rem 0 1.5rem;
+  }
+  .custom-container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
+
+.speaker-section-wrapper .speaker-section-contents .speaker-section-text h1 {
+  padding-left: 20px;
+	font-size: 45px;
+	line-height: 59px;
+	color: #0D3E5E;
+	margin-bottom: 1.125rem;
+}
+
+.speaker-section-wrapper .about-section-contents .about-section-text p {
+	font-weight: 500;
+	font-size: 1.125rem;
+	line-height: 27px;
+	color: #77869E;
+	margin-bottom: 24px;
+}
+
 .speak h1 {
 font-size: 48px;
 line-height: 48px;
 letter-spacing: 0.02em;
 padding: 5% 0; 
 color: #0D3E5E;
-}
-.speakers {
-  display: flex;
-  overflow: hidden;
 }
 .speaker {
   background-color: #3A1900;
@@ -269,17 +332,11 @@ color: #0D3E5E;
   padding: 10px;
   color: #041825;
 }
-.card {
-  margin: 16px;
-}
 .card h2{
   padding: 10px 0;
   font-size: 24px;
 line-height: 32px;
-/* or 133% */
-
 letter-spacing: 0.02em;
-
 color: #041825;
 
 }
@@ -294,7 +351,7 @@ color: #041825;
 
 /*Event Schedule Section*/
 .custom-container {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -662,6 +719,11 @@ footer .footer-wrapper .links-wrapper .connect {
   footer .footer-wrapper .links-wrapper .flickers {
     text-align: center;
   }
+  .custom-container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
 }
 
 footer .footer-wrapper h3 {
@@ -730,7 +792,7 @@ footer .footer-wrapper .flickers li a {
   line-height: 27px;
 }
 
-footer .footer-wrapper .social-links {
+ .social-links {
   margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -744,7 +806,7 @@ footer .footer-wrapper .social-links {
 }
 
 @media screen and (max-width: 717px) {
-  footer .footer-wrapper .social-links {
+   .social-links {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -753,27 +815,24 @@ footer .footer-wrapper .social-links {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  footer .footer-wrapper .social-links p {
+  .social-links p {
     text-align: center;
   }
-  footer .footer-wrapper .social-links .social-icons {
+  .social-icons {
     margin-top: 1rem;
   }
 }
 
-footer .footer-wrapper .social-links p {
+ .social-links p {
   font-weight: 300;
   font-size: 1.125rem;
   line-height: 27px;
   color: rgba(255, 255, 255, 0.9);
 }
 
-footer .footer-wrapper .social-links .social-icons li {
-  display: inline-block;
+ .social-icons li {
+  display: inline;
   margin-right: 1.125rem;
 }
 
-footer .footer-wrapper .social-links li:last-child {
-  margin-right: 0;
-}
 
