@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   --link-primary-color: #0D3E5E;
   --link-hover-color: #f5f6fa;
@@ -11,7 +11,7 @@
 }
 
 body{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
   background-color:  #E5E5E5;
   font-style: normal;
   font-weight: normal;
@@ -280,7 +280,7 @@ color: #77869E;
   padding-top: 5px;
 }
 .video-container{
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -843,4 +843,44 @@ footer .footer-wrapper .flickers li a {
   margin-right: 1.125rem;
 }
 
+.output {
+  text-align:center;
+  font-family: 'Source Code Pro', monospace;
+  color:black;
+}
+
+/* Cursor Styling */
+
+.cursor::after {
+  content:'';
+  display:inline-block;
+  margin-left:3px;
+  background-color:white;
+  animation-name:blink;
+  animation-duration:0.5s;
+  animation-iteration-count: infinite;
+}
+h1.cursor::after {
+  height:24px;
+  width:13px;
+}
+p.cursor::after {
+  height:13px;
+  width:6px;
+}
+
+@keyframes blink {
+  0% {
+    opacity:1;
+  }
+  49% {
+    opacity:1;
+  }
+  50% {
+    opacity:0;
+  }
+  100% {
+    opacity:0;
+  }
+}
 

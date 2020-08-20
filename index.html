@@ -4,8 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="assets/Glade Logo.svg" type="image/x-icon" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <title>Glade Webinar</title>
     <link href="style.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <!-- Start of Desktop Navigation -->
@@ -67,11 +69,11 @@
           <div class="about-section-text">
             <img src="assets/Group 1 (4).png" alt="">
           </div>
-            <div class="about-section-text line">
+            <div class="about-section-text line" data-aos-duration="2000" data-aos="fade-up-left">
                 <h1> Managing School Portals In The Modern World</h1>
             </div>
     
-            <div class="about-section-text">
+            <div class="about-section-text" data-aos-duration="3000" data-aos="fade-up-left">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -84,17 +86,17 @@
       </section>
       <!-- End of About Section -->
 
-      <!-- Video Section 
-      <section class="video-container">
-        <iframe width="900" height="500" src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1" frameborder="0"></iframe>
+      <!-- Video Section -->
+      <section class="video-container" data-aos-duration="3000" data-aos="fade-right">
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0"></iframe>
         <p>See why managing school portals in the modern world is important</p>
-      </section>-->
+      </section>
       
     <!------Speaker------->
     <section class="speaker-section-wrapper custom-container">
       <div class="speaker-section-contents">
           <div class="speaker-section-text">
-            <div class="card">
+            <div class="card" data-aos-duration="3000" data-aos="fade-down-right">
               <div class="speaker1">
                   <div class="speaker"><img src="assets/Rectangle 17.svg" alt=""></div>
                  <div class="speaker-name">
@@ -107,7 +109,7 @@
           </div>
   
           <div class="speaker-section-text">
-            <div class="card">
+            <div class="card" data-aos-duration="3000" data-aos="fade-up">
               <div class="speaker2">
                   <div class="speaker"><img src="assets/Rectangle 17.svg" alt=""></div>
                   <div class="speaker-name">
@@ -119,7 +121,7 @@
           </div>
           </div>
           <div class="speaker-section-text">
-            <div class="card">
+            <div class="card" data-aos-duration="3000" data-aos="fade-down-left">
               <div class="speaker3">
                   <div class="speaker"><img src="assets/Rectangle 17.svg" alt=""></div>
                  <div class="speaker-name">
@@ -136,7 +138,7 @@
   
     <!------Register section------->
     <section class="subscribe">
-        <div class="subscribe-wrapper">
+        <div class="subscribe-wrapper" data-aos-duration="3000" data-aos="fade-up">
             <div class="subscribe-text">
                 <h3>Subscribe to our event newsletter and 
                     be the first to hear about all event 
@@ -152,7 +154,7 @@
   
     <!------Event Schedule section------->
     <section class="Event-section-wrapper custom-container">
-      <div class="event-text">
+      <div class="event-text" data-aos-duration="3000" data-aos="fade-right">
         <h1>Event Schedule</h1>
       </div>
       <div class="event-section-contents">
@@ -228,7 +230,7 @@
 
 <!------Subscribe to us section------->
     <section class="subscribe">
-        <div class="subscribe-wrapper custom-container">
+        <div class="subscribe-wrapper" custom-container data-aos="fade-up">
             <div class="subscribe-text">
                 <h3>Subscribe to our event newsletter and 
                     be the first to hear about all event 
@@ -319,8 +321,11 @@
         </section>
       </footer>
       <!-- End of Footer -->
-  
+
+      
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>AOS.init();</script>
       <script src="nav.js"></script>
-    <script src="index.js"></script>
+      <script src="index.js"></script>
   </body>
 </html>
