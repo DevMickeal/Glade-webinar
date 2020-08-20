@@ -3,6 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="assets/Glade Logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Glade Webinar</title>
     <link href="style.css" rel="stylesheet" />
   </head>
@@ -23,7 +24,7 @@
               <a href="">Speakers<span></span></a>
             </li>
             <li>
-              <a href="">Book my Seat<span></span></a>
+              <a class="btn" href="">Save my Seat<span></span></a>
             </li>
           </ul>
 
@@ -54,7 +55,7 @@
         <ul class="mobile-nav-links">
           <li><a href="index.html">Schedule</a></li>
           <li><a href=".">Speakers</a></li>
-          <li><a href=""></a>book my seat</li>
+          <li><a class="btn" href="">Book my seat</a></li>
         </ul>
       </nav>
     </section>
@@ -63,6 +64,9 @@
     <!-- Start of About Section -->
     <section class="about-section-wrapper custom-container">
         <div class="about-section-contents">
+          <div class="about-section-text">
+            <img src="assets/Group 1 (4).png" alt="">
+          </div>
             <div class="about-section-text line">
                 <h1> Managing School Portals In The Modern World</h1>
             </div>
@@ -81,14 +85,10 @@
       <!-- End of About Section -->
 
       <!-- Video Section -->
-      <section class="custom-container">
-        <video width="100%" controls src="assets/1. Course Introduction.mp4"></video>
-        <div class="video-text">
-          <p>See why managing school portals in the modern world is important</p>
-          <p>SAVE EVENT TO CALENDAR</p>
-        </div>
+      <section class="video-container">
+        <iframe width="900" height="500" src="https://www.youtube.com/watch?v=IohmUyZ5ULk" frameborder="0"></iframe>
+        <p>See why managing school portals in the modern world is important</p>
       </section>
-      
       
     <!------Speaker------->
     <section class="speaker-section-wrapper custom-container">
@@ -136,7 +136,7 @@
   
     <!------Register section------->
     <section class="subscribe">
-        <div class="subscribe-wrapper custom-container">
+        <div class="subscribe-wrapper">
             <div class="subscribe-text">
                 <h3>Subscribe to our event newsletter and 
                     be the first to hear about all event 
@@ -151,80 +151,78 @@
 
   
     <!------Event Schedule section------->
-    <section class="custom-container">
-        <div class="event">
-            <div class="event-text">
-                <h1>Event Schedule</h1>
-            </div>
-                <div class="plan-event">
-                    <div class="event-time">
-                        <p> 3:00 - 3:30 PM </p> 
-                    </div>
-                    <div class="event-text">
-                        <h2>Registration</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Laborum omnis tempore voluptate possimus non illum 
-                            impedit sequi error iure odio eius sit similique culpa,
-                             ducimus amet veritatis a autem architecto!</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="plan-event">
-                    <div class="event-time">
-                        <p>3:00 - 3:30 PM</p> 
-                    </div>
-                    <div class="event-text">
-                        <h2>Webinar Commences</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Laborum omnis tempore voluptate possimus non illum 
-                            impedit sequi error iure odio eius sit similique culpa,
-                             ducimus amet veritatis a autem architecto!</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="plan-event">
-                    <div class="event-time">
-                        <p>3:00 - 3:30 PM</p> 
-                    </div>
-                    <div class="event-text">
-                        <h2>Data Security in the Academia</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Numquam, tempora? Labore quam iure, tempora,
-                             quidem aperiam voluptates omnis ex beatae molestias,
-                            praesentium eos culpa ad ab sit fugit iusto dignissimos.</p>
-                    </div>
-                    <!--<img src="assets/Ellipse 3.svg" alt="">-->
-                </div>
-                <hr>
-                <div class="plan-event">
-                    <div class="event-time">
-                        <p>3:00 - 3:30 PM</p> 
-                    </div>
-                    <div class="event-text">
-                        <h2>Seamless Payment Collection for Education</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Laborum omnis tempore voluptate possimus non illum 
-                            impedit sequi error iure odio eius sit similique culpa,
-                             ducimus amet veritatis a autem architecto!</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="plan-event">
-                    <div class="event-time">
-                        <p>3:00 - 3:30 PM</p> 
-                    </div>
-                    <div class="event-text">
-                        <h2>Financial reporting Best Practices </h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Laborum omnis tempore voluptate possimus non illum 
-                            impedit sequi error iure odio eius sit similique culpa,
-                             ducimus amet veritatis a autem architecto!</p>
-                    </div>
-                </div> 
-                <hr>       
+    <section class="Event-section-wrapper custom-container">
+      <div class="event-text">
+        <h1>Event Schedule</h1>
+      </div>
+      <div class="event-section-contents">
+        <div class="event-section-text">
+          <p>3:00 - 3:30 PM</p>
         </div>
+          <div class="event-section-text">
+              <h3> Registration</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Consequuntur, esse. 
+                Iusto perspiciatis libero impedit nulla
+                 quod cupiditate repudiandae tempora excepturi 
+                facilis doloribus esse recusandae, omnis quos, tenetur itaque debitis autem.</p>
+          </div>
+        </div>
+        <hr>
+        <div class="event-section-contents">
+            <div class="event-section-text">
+              <p>3:00 - 3:30 PM</p>
+            </div>
+            <div class="event-section-text">
+                  <h3> Webinar Commences </h3>
+                  <p>Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Consequuntur, esse. 
+                    Iusto perspiciatis libero impedit nulla
+                     quod cupiditate repudiandae tempora excepturi 
+                    facilis doloribus esse recusandae, omnis quos, tenetur itaque debitis autem.</p>
+            </div>
+            
+          </div>
+          <hr>
+          <div class="event-section-content">
+            <div class="event-section-text">
+              <p>3:00 - 3:30 PM</p>
+            </div>
+            <div class="event-section-text">
+                  <h3>Data Security in Academia</h3>
+                  <p>with Efik Adebusuyi, CEO Dolor Tech </p>
+            </div>
+            <div class="event-section-text">
+              <img src="assets/speaker 1.svg" alt="">
+            </div>
+          </div>
+          <hr>
+          <div class="event-section-content">
+            <div class="event-section-text">
+              <p>3:00 - 3:30 PM</p>
+            </div>
+            <div class="event-section-text">
+                  <h3>Seamless Payment Collection for Education</h3>
+                  <p> with Prof. Muhammed Chibuzor, HOD, Faculty of Science, OAU</p>
+            </div>
+            <div class="event-section-text">
+              <img src="assets/Speaker 2.svg" alt="">
+            </div>
+          </div>
+          <hr>
+          <div class="event-section-content">
+            <div class="event-section-text">
+              <p>3:00 - 3:30 PM</p>
+            </div>
+            <div class="event-section-text">
+                  <h3>Financial reporting Best Practices</h3>
+                  <p> with Bolanle Fatimah, COO KPMG</p>
+            </div>
+            <div class="event-section-text">
+              <img src="assets/Speaker 3.svg" alt="">
+            </div>
+          </div>
     </section>
-
      
   
 
