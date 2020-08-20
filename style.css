@@ -404,12 +404,12 @@ hr {
   margin: 20px 0;
 }
 .event-text h1{
-  width: 210.14px;
+width: 210.14px;
 height: 107.03px;
 font-weight: 800;
 font-size: 48px;
 line-height: 55px;
-padding-bottom: 20% 0;
+padding-bottom: 10%;
 letter-spacing: 0.02em;
 
 color: #0D3E5E;
@@ -477,6 +477,11 @@ color: #77869E;
     margin: 0 auto;
     overflow: hidden;
   }
+  .subscribe-wrapper{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
 }
 
 .event-section-wrapper .event-section-contents .event-section-text h1,
@@ -505,8 +510,11 @@ color: #77869E;
   margin: 0 auto;
 }
 .subscribe-wrapper {
-  
-}
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+  } 
+
 .subscribe-text {
   padding-top: 10%;
   width: 644px;
@@ -521,7 +529,7 @@ color: #77869E;
    background-color: #3C4A53;
    width: 600px;
    border: none;
-   color: #E9E9E9;;
+   color: #E9E9E9;
    border-bottom: 1px solid #E9E9E9;
    font-size: 18px;
    line-height: 27px;
