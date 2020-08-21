@@ -30,6 +30,8 @@ height: 50.58px;
 color: #fff;
 background: #00AFEF;
 border-radius: 5px;
+padding: 10%;
+text-align: center;
 }
 ul {
   list-style-type: none;
@@ -729,6 +731,9 @@ footer .footer-wrapper .links-wrapper .connect {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  footer .footer-wrapper .about-us .head-text {
+    
+  }
  .video-container {
    width: 90%;
    height: 50%;
@@ -759,17 +764,19 @@ footer .footer-wrapper .about-us a {
 }
 
 footer .footer-wrapper .about-us .about-text {
-  width: 349px;
+  width: 338px;
   font-weight: normal;
   font-size: 1.125rem;
   line-height: 27px;
   margin-bottom: 20px;
 }
 footer .footer-wrapper .about-us .head-text {
+  width: 338px;
   font-weight: normal;
   font-size: 1.125rem;
   line-height: 27px;
   margin-bottom: 20px;
+  padding: 5px;
 }
 footer .footer-wrapper .about-us .country-text {
   
